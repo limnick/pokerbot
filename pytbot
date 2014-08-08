@@ -175,7 +175,9 @@ class TBot(irc.IRCClient):
 
         l = msg.strip().split()
 
-        if len(l) > 1 and l[0] == 'p':
+        if l[0].startswith('.'):
+            l[0] = l[0][1:]
+            l = ["."] + l
 
             cmd = Command(user, l)
             if cmd.arg == 'ERROR':

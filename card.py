@@ -73,7 +73,7 @@ class Card:
         # Uncomment the next line to disable the color command
         # color = False
 
-        
+
         # FIXME:
         # Unfortunately there is no standard for IRC color codes and I
         # have reluctantly decided to drink the mIRC kool-aid.  I want
@@ -92,14 +92,14 @@ class Card:
         # card display mechanism.  Today is not that day.
         if color:
             if s == 'c':
-                f = '\x02\x0303,00%c%c\x0F' % (r, s)
+                f = '\x02\x0303,15%c%c\x0F' % (r, s)
             elif s == 'd':
-                f = '\x02\x0302,00%c%c\x0F' % (r, s)
+                f = '\x02\x0302,15%c%c\x0F' % (r, s)
             elif s == 'h':
-                f = '\x02\x0304,00%c%c\x0F' % (r, s)
+                f = '\x02\x0304,15%c%c\x0F' % (r, s)
             elif s == 's':
-                f = '\x02\x0301,00%c%c\x0F' % (r, s)
-                         
+                f = '\x02\x0301,15%c%c\x0F' % (r, s)
+
         return f
 
 if __name__ == '__main__':

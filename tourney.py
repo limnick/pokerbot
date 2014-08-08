@@ -64,7 +64,7 @@ class Tourney:
         self.nosb = False
         self.butflag = False
         self.bbacted = False
-        self.color = False
+        self.color = True
         self.curbet = 0
         self.minraise = 0
         self.maxaction = 0
@@ -1874,39 +1874,39 @@ class Tourney:
         return oldas
 
     def dohelp(self, pid):
-
-        self.noteout(pid, 'Dealer commands:')
-        self.noteout(pid, '----------------')
-        self.noteout(pid, ' ')
-        self.noteout(pid, "join - Attempt to join the next tournament.")
-        self.noteout(pid, "quit - Quit immediately.  Any money you've put into the pot stays there.")
-        self.noteout(pid, ' ')
-        self.noteout(pid, "blind <amount> - Set the size of the small blind.")
-        self.noteout(pid, "double <interval> [hands] - Set time interval (seconds) for doubling the blinds.  Optional 'hands' argument changes interval to the number of hands.")
-        self.noteout(pid, "bankroll <amount> - Set the size of the initial bankroll for all players.")
-        self.noteout(pid, "start - Start the tournament.  There must be 2-23 players joined.")
-        self.noteout(pid, "abort - Abort the tournament.  Players will remain joined.")
-        self.noteout(pid, ' ')
-        self.noteout(pid, "check - Get a warning if there's a bet to you.")
-        self.noteout(pid, "color - Toggle colored cards.  This will break some GUIs.")
-        self.noteout(pid, "autofold - Toggle fold behavior.  Either fold immediately or check when there's no bet.   Fold means fold by default.")
-        self.noteout(pid, "fold - Fold at your earliest opportunity.")
-        self.noteout(pid, "jam - Go all in.")
-        self.noteout(pid, "pot - Call and raise the value of the pot.")
-        self.noteout(pid, "call [amount] - Call any bet if you don't specify amount.")
-        self.noteout(pid, "make <amount> - Make the bet <amount>.  Will call or raise depending on amount.")
-        self.noteout(pid, "raise <amount> - Attempt to raise <amount>.")
-        self.noteout(pid, "undo - Undo any advance action.")
-        self.noteout(pid, ' ')
-        self.noteout(pid, "vacation [nick] - Without an argument, send yourself on vacation.  Otherwise, send nick on vacation.")
-        self.noteout(pid, "back - come back from vacation.  You can only bring yourself back.")
-        self.noteout(pid, "remind <nick> - Remind nick that it's their turn to act.")
-        self.noteout(pid, ' ')
-        self.noteout(pid, "cards - Look at your hole cards.")
-        self.noteout(pid, "board - Look at the board.")
-        self.noteout(pid, "status - Print WRGPT-style status message.")
-        self.noteout(pid, ' ')
-        self.noteout(pid, "commands - List of dealer commands (*this* list!)")
+        self.noteout(pid, 'Please visit http://sharktopus.com/yospoker.txt')
+        # self.noteout(pid, 'Dealer commands:')
+        # self.noteout(pid, '----------------')
+        # self.noteout(pid, ' ')
+        # self.noteout(pid, "join - Attempt to join the next tournament.")
+        # self.noteout(pid, "quit - Quit immediately.  Any money you've put into the pot stays there.")
+        # self.noteout(pid, ' ')
+        # self.noteout(pid, "blind <amount> - Set the size of the small blind.")
+        # self.noteout(pid, "double <interval> [hands] - Set time interval (seconds) for doubling the blinds.  Optional 'hands' argument changes interval to the number of hands.")
+        # self.noteout(pid, "bankroll <amount> - Set the size of the initial bankroll for all players.")
+        # self.noteout(pid, "start - Start the tournament.  There must be 2-23 players joined.")
+        # self.noteout(pid, "abort - Abort the tournament.  Players will remain joined.")
+        # self.noteout(pid, ' ')
+        # self.noteout(pid, "check - Get a warning if there's a bet to you.")
+        # self.noteout(pid, "color - Toggle colored cards.  This will break some GUIs.")
+        # self.noteout(pid, "autofold - Toggle fold behavior.  Either fold immediately or check when there's no bet.   Fold means fold by default.")
+        # self.noteout(pid, "fold - Fold at your earliest opportunity.")
+        # self.noteout(pid, "jam - Go all in.")
+        # self.noteout(pid, "pot - Call and raise the value of the pot.")
+        # self.noteout(pid, "call [amount] - Call any bet if you don't specify amount.")
+        # self.noteout(pid, "make <amount> - Make the bet <amount>.  Will call or raise depending on amount.")
+        # self.noteout(pid, "raise <amount> - Attempt to raise <amount>.")
+        # self.noteout(pid, "undo - Undo any advance action.")
+        # self.noteout(pid, ' ')
+        # self.noteout(pid, "vacation [nick] - Without an argument, send yourself on vacation.  Otherwise, send nick on vacation.")
+        # self.noteout(pid, "back - come back from vacation.  You can only bring yourself back.")
+        # self.noteout(pid, "remind <nick> - Remind nick that it's their turn to act.")
+        # self.noteout(pid, ' ')
+        # self.noteout(pid, "cards - Look at your hole cards.")
+        # self.noteout(pid, "board - Look at the board.")
+        # self.noteout(pid, "status - Print WRGPT-style status message.")
+        # self.noteout(pid, ' ')
+        # self.noteout(pid, "commands - List of dealer commands (*this* list!)")
 
     def position(self, player):
         '''Return the position of player. Positions numbers starts at

@@ -33,12 +33,12 @@ class Command:
                  'POSITION', 'QUIT', 'START', 'STATUS', 'UNDO']
 
         chararg = ['REMIND', 'VACATION']
-        
+
         intarg = ['BANKROLL', 'BET', 'BLIND', 'CALL', 'DOUBLE', 'MAKE',
                   'RAISE']
 
         onearg = chararg + intarg
-        
+
         if len(liszt) > 0:
             self.cmd = liszt[1].upper()
 
@@ -92,7 +92,7 @@ class Command:
         'Format Command.arg'
 
         goodarg = True;
-        
+
         #log.logger.debug('Command.goodarg()')
 
         intargcmds = ['BET', 'CALL', 'MAKE', 'RAISE', 'BLIND',
@@ -123,7 +123,7 @@ class Command:
                 goodarg = False
 
         return goodarg
-            
+
 if __name__ == '__main__':
     acommand = Command()
     print acommand
